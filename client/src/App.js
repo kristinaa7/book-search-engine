@@ -4,7 +4,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { createHttpLink } from '@apollo/client';
+// import { createHttpLink } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: '/graphql',
