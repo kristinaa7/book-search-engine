@@ -1,12 +1,20 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_THOUGHTS = gql`
-  query getThoughts {
-    thoughts {
+export const GET_ME = gql`
+{
+    me {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
+      username
+      email
+      bookCount
+      savedBooks {
+        bookId
+        authors
+        description
+        title
+        image
+        link
+      }
     }
   }
 `;
